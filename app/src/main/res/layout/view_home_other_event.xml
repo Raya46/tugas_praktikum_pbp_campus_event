@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardEventOther"
+    style="@style/Card.Clean"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0E0E0"> <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_md"
+    android:background="@android:color/white"> <TextView
+    android:id="@+id/tvEventTitle2"
+    style="@style/Text.H1"
+    android:textSize="18sp"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Workshop UI/UX Design"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEventDesc2"
+        style="@style/Text.BodyMuted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xs"
+        android:text="Belajar membuat prototipe interaktif menggunakan Figma. Terbuka untuk semua jurusan!"
+        app:layout_constraintTop_toBottomOf="@id/tvEventTitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDetail2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:text="Lihat Detail"
+        app:cornerRadius="@dimen/radius_md"
+        android:textColor="#2196F3"
+        app:strokeColor="#2196F3"
+        app:layout_constraintTop_toBottomOf="@id/tvEventDesc2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

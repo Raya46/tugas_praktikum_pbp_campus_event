@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_lg">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:text="Kembali"
+            android:textColor="#757575"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:strokeWidth="0dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#E0E0E0"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:tint="#9E9E9E"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            style="@style/Text.H1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            android:text="Judul Kegiatan" />
+
+        <TextView
+            android:id="@+id/tvDetailDesc"
+            style="@style/Text.BodyMuted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            android:lineSpacingExtra="4dp"
+            android:text="Deskripsi lengkap kegiatan akan muncul di sini." />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:padding="14dp"
+            android:text="Daftar Sekarang"
+            app:cornerRadius="@dimen/radius_md"
+            app:backgroundTint="#2196F3"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
