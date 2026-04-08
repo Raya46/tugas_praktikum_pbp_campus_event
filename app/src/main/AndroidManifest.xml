@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailEventActivity"
+            android:name=".ui.DetailEventActivity"
             android:exported="false" />
     </application>
 

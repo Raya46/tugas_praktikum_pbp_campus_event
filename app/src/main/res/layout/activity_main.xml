@@ -25,26 +25,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_lg" />
 
-        <include
-            android:id="@+id/incEvent"
-            layout="@layout/view_home_event"
+        <ListView
+            android:id="@+id/lvEvents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_lg" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_lg"
-            android:layout_marginBottom="@dimen/space_sm"
-            android:text="Kegiatan Lainnya"
-            style="@style/Text.H1"
-            android:textSize="18sp"/>
-
-        <include
-            android:id="@+id/incEventOther"
-            layout="@layout/view_home_other_event"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_marginTop="16dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="16dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="true"/>
 
     </LinearLayout>
 
