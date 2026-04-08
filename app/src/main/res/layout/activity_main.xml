@@ -8,34 +8,34 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/space_lg"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
 
-        <include
-            android:id="@+id/incHeader"
-            layout="@layout/view_home_header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang di CampusEvent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="8dp"/>
 
-        <include
-            android:id="@+id/incSearch"
-            layout="@layout/view_home_search"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temukan berbagai kegiatan menarik di kampusmu!"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnExplore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_lg" />
-
-        <ListView
-            android:id="@+id/lvEvents"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:divider="@android:color/transparent"
-            android:dividerHeight="16dp"
-            android:paddingBottom="16dp"
-            android:clipToPadding="false"
-            android:nestedScrollingEnabled="true"/>
-
+            android:text="Jelajahi Semua Event"
+            android:padding="16dp"
+            app:cornerRadius="12dp"/>
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

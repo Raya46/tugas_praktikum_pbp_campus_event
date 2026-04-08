@@ -3,5 +3,7 @@
     <style name="Theme.CampusEvent" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">#2196F3</item>
         <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:windowSplashScreenBackground">@android:color/white</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logo</item>
     </style>
 </resources>

@@ -10,7 +10,7 @@ import com.example.tugas_kuliah_campus_event.R
 import com.example.tugas_kuliah_campus_event.data.EventRepository
 import com.google.android.material.button.MaterialButton
 
-class DetailEventActivity : AppCompatActivity() {
+class EventDetailActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_EVENT_ID = "extra_event_id"
@@ -45,7 +45,7 @@ class DetailEventActivity : AppCompatActivity() {
             val btnRegister = findViewById<Button>(R.id.btnRegister)
             btnRegister.setOnClickListener {
                 val successMessage = getString(R.string.toast_register_success, event.namaEvent)
-                Toast.makeText(this@DetailEventActivity, successMessage, Toast.LENGTH_LONG).show()
+                Toast.makeText(this@EventDetailActivity, successMessage, Toast.LENGTH_LONG).show()
             }
         } else {
             Toast.makeText(this, getString(R.string.toast_event_not_found), Toast.LENGTH_SHORT).show()
